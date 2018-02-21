@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E43A761A-CC85-440B-9104-2BB6A866E330}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BAG_PRandPO_UI</RootNamespace>
+    <AssemblyName>BAG_PRandPO_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Purchase Order\frmDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmDetails.Designer.cs">
+      <DependentUpon>frmDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmLandingPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmLandingPO.Designer.cs">
+      <DependentUpon>frmLandingPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmLoginPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmLoginPO.Designer.cs">
+      <DependentUpon>frmLoginPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmNewPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmNewPO.Designer.cs">
+      <DependentUpon>frmNewPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmOrderDetails.Designer.cs">
+      <DependentUpon>frmOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmOrderList.Designer.cs">
+      <DependentUpon>frmOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmPRtoPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmPRtoPO.Designer.cs">
+      <DependentUpon>frmPRtoPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmReceiving.Designer.cs">
+      <DependentUpon>frmReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmApprove.Designer.cs">
+      <DependentUpon>frmApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmAttach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmAttach.Designer.cs">
+      <DependentUpon>frmAttach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmCancelPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmCancelPopup.Designer.cs">
+      <DependentUpon>frmCancelPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmDisapprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmDisapprove.Designer.cs">
+      <DependentUpon>frmDisapprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\Form1.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmLanding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmLanding.Designer.cs">
+      <DependentUpon>frmLanding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmNewPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmNewPR.Designer.cs">
+      <DependentUpon>frmNewPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase Request\frmReqList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmReqList.Designer.cs">
+      <DependentUpon>frmReqList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\frmUserReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\frmUserReg.Designer.cs">
+      <DependentUpon>frmUserReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Request\popupCompletePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Request\popupCompletePO.Designer.cs">
+      <DependentUpon>popupCompletePO.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Purchase Order\frmDetails.resx">
+      <DependentUpon>frmDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmLandingPO.resx">
+      <DependentUpon>frmLandingPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmLoginPO.resx">
+      <DependentUpon>frmLoginPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmNewPO.resx">
+      <DependentUpon>frmNewPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmOrderDetails.resx">
+      <DependentUpon>frmOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmOrderList.resx">
+      <DependentUpon>frmOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmPRtoPO.resx">
+      <DependentUpon>frmPRtoPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmReceiving.resx">
+      <DependentUpon>frmReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmApprove.resx">
+      <DependentUpon>frmApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmAttach.resx">
+      <DependentUpon>frmAttach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmCancelPopup.resx">
+      <DependentUpon>frmCancelPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmDisapprove.resx">
+      <DependentUpon>frmDisapprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmLanding.resx">
+      <DependentUpon>frmLanding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Purchase Request\frmNewPR.resx">
+      <DependentUpon>frmNewPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmReqList.resx">
+      <DependentUpon>frmReqList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\frmUserReg.resx">
+      <DependentUpon>frmUserReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Request\popupCompletePO.resx">
+      <DependentUpon>popupCompletePO.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
